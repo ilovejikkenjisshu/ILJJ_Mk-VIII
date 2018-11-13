@@ -1,18 +1,6 @@
-#define _F2     32
-#define _F1     31
-#define _F0     30
-#define _Cout   34
-#define _Cin    33
-#define _S1     41
-#define _S0     40
-#define _A1     51
-#define _A0     50
-#define _B1     53
-#define _B0     52
-
+#include "defines.h"
 
 bool flag;
-
 
 void setup() {
     pinMode(_F2,    OUTPUT);
@@ -30,7 +18,6 @@ void setup() {
     Serial.begin(57600);
     flag = false;
 }
-
 
 void loop() {
     if (!flag) {
