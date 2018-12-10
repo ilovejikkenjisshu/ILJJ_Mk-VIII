@@ -31,20 +31,21 @@ void _checkOutput(bool cout, bool s1, bool s0) {
 }
 
 int loopTester(int mode){
-  int l,a,b,o;
+  int l,a,b,cin,o;
   _setMode(ext(mode,2), ext(mode,1), ext(mode,0));
   for(l = 0; l < 0x1F; l++){
     a = ext(l,3)*2 + ext(l,2);
     b = ext(l,1)*2 + ext(l,0);
+    cin = ext(l,4);
     _setInput(ext(l,4),ext(l,3),ext(l,2),ext(l,1),ext(l,0));
     switch(mode){
-      case XOR :o =   a ^ b ;   break;
-      case XNOR:o = ~(a ^ b);   break;
-      case AND :o =   a & b ;   break;
-      case OR  :o =   a | b ;   break;
-      case ADD :o =   a + b ;   break;
-      case SUB :o =   a - b ;   break;
-      default  :                return -1;
+      case _XOR : o =   a ^ b ;       break;
+      case _XNOR: o = ~(a ^ b);       break;
+      case _AND : o =   a & b ;       break;
+      case _OR  : o =   a | b ;       break;
+      case _ADD : o =   a + b + cin;  break;
+      case _SUB : o =   a+(b^3)+cin;  break;
+      default   :                 return -1;
     }
     _checkOutput(ext(o,2),ext(o,1),ext(o,0));
   }
