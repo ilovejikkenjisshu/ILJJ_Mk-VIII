@@ -9,3 +9,12 @@
 #define _A0     50
 #define _B1     53
 #define _B0     52
+
+#define XOR     0
+#define XNOR    1
+#define AND     2
+#define OR      3
+#define ADD     4
+#define SUB     5
+
+#define ext(ori,n) ((ori >> n)& 0x1)
