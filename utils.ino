@@ -37,7 +37,7 @@ int loopTester(int mode){
     a = ext(l,3)*2 + ext(l,2);
     b = ext(l,1)*2 + ext(l,0);
     _setInput(ext(l,4),ext(l,3),ext(l,2),ext(l,1),ext(l,0));
-    switch(symbol){
+    switch(mode){
       case XOR :o =   a ^ b ;   break;
       case XNOR:o = ~(a ^ b);   break;
       case AND :o =   a & b ;   break;
