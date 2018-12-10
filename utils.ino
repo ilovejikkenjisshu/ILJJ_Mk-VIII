@@ -39,13 +39,13 @@ int loopTester(int mode){
     cin = ext(l,4);
     _setInput(ext(l,4),ext(l,3),ext(l,2),ext(l,1),ext(l,0));
     switch(mode){
-      case _XOR : o =   a ^ b ;       break;
-      case _XNOR: o = ~(a ^ b);       break;
-      case _AND : o =   a & b ;       break;
-      case _OR  : o =   a | b ;       break;
-      case _ADD : o =   a + b + cin;  break;
-      case _SUB : o =   a+(b^3)+cin;  break;
-      default   :                 return -1;
+      case _XOR : o =   a ^ b ;               break;
+      case _XNOR: o = ~(a ^ b);               break;
+      case _AND : o =   a & b ;               break;
+      case _OR  : o =   a | b ;               break;
+      case _ADD : o =   a + b + cin;          break;
+      case _SUB : o =   a + (b ^ 0x3) + cin;  break;
+      default   :                             return -1;
     }
     _checkOutput(ext(o,2),ext(o,1),ext(o,0));
   }
