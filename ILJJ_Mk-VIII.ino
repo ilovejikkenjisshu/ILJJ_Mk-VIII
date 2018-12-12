@@ -33,5 +33,13 @@ void loop() {
     tester("- AND test", and_test);
     tester("- OR test", or_test);
     tester("- Adder test", adder_test);
+    /*
+     * tester("- XOR test", loopTester(XOR));
+     * tester("- XNOR test", loopTester(XNOR));
+     * tester("- AND test", loopTester(AND));
+     * tester("- OR test", loopTester(OR));
+     * tester("- Adder test", loopTester(ADD));
+     * tester("- Sub test", loopTester(SUB));
+     */
   }
 }

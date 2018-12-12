@@ -10,7 +10,7 @@ int or_test() {
 
   _setInput(LOW , LOW , HIGH, LOW , LOW ); _checkOutput(LOW , LOW , HIGH);
   _setInput(LOW , LOW , HIGH, LOW , HIGH); _checkOutput(LOW , LOW , HIGH);
-  _setInput(LOW , LOW , HIGH, HIGH, LOW ); _checkOutput(LOW , HIGH, HIGH;
+  _setInput(LOW , LOW , HIGH, HIGH, LOW ); _checkOutput(LOW , HIGH, HIGH);
   _setInput(LOW , LOW , HIGH, HIGH, HIGH); _checkOutput(LOW , HIGH, HIGH);
 
   _setInput(LOW , HIGH, LOW , LOW , LOW ); _checkOutput(LOW , HIGH, LOW );
@@ -30,7 +30,7 @@ int or_test() {
 
   _setInput(HIGH, LOW , HIGH, LOW , LOW ); _checkOutput(LOW , LOW , HIGH);
   _setInput(HIGH, LOW , HIGH, LOW , HIGH); _checkOutput(LOW , LOW , HIGH);
-  _setInput(HIGH, LOW , HIGH, HIGH, LOW ); _checkOutput(LOW , HIGH, HIGH;
+  _setInput(HIGH, LOW , HIGH, HIGH, LOW ); _checkOutput(LOW , HIGH, HIGH);
   _setInput(HIGH, LOW , HIGH, HIGH, HIGH); _checkOutput(LOW , HIGH, HIGH);
 
   _setInput(HIGH, HIGH, LOW , LOW , LOW ); _checkOutput(LOW , HIGH, LOW );
