@@ -1,14 +1,18 @@
-#define _F2     32
-#define _F1     31
-#define _F0     30
-#define _Cout   34
-#define _Cin    33
-#define _S1     41
-#define _S0     40
-#define _A1     51
-#define _A0     50
-#define _B1     53
-#define _B0     52
+#define _F2     48
+#define _F1     46
+#define _F0     44
+#define _Cout   42
+#define _Cin    43
+#define _S1     38
+#define _S0     36
+// #define _A1     31
+// #define _A0     29
+// #define _B1     30
+// #define _B0     28
+#define _B1     31
+#define _B0     29
+#define _A1     30
+#define _A0     28
 
 #define _XOR     0
 #define _XNOR    1

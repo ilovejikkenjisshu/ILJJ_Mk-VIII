@@ -15,13 +15,13 @@ void setup() {
   pinMode(_B1,    OUTPUT);
   pinMode(_B0,    OUTPUT);
 
-  Serial.begin(57600);
+  Serial.begin(9600);
   flag = false;
 }
 
 void loop() {
   if (!flag) {
-    Serial.print("To start tests, please enter: ");
+    // Serial.println("To start tests, please enter: ");
     Serial.flush();
   }
   if (Serial.available()) {
@@ -33,13 +33,14 @@ void loop() {
     tester("- AND test", and_test);
     tester("- OR test", or_test);
     tester("- Adder test", adder_test);
+
     /*
-     * tester("- XOR test", loopTester(XOR));
-     * tester("- XNOR test", loopTester(XNOR));
-     * tester("- AND test", loopTester(AND));
-     * tester("- OR test", loopTester(OR));
-     * tester("- Adder test", loopTester(ADD));
-     * tester("- Sub test", loopTester(SUB));
-     */
+      tester("- XOR test", loopTester(_XOR));
+      tester("- XNOR test", loopTester(_XNOR));
+      tester("- AND test", loopTester(_AND));
+      tester("- OR test", loopTester(_OR));
+      tester("- Adder test", loopTester(_ADD));
+      tester("- Sub test", loopTester(_SUB));
+    */
   }
 }
