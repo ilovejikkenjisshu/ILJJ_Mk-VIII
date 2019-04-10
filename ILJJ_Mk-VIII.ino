@@ -27,20 +27,20 @@ void loop() {
   if (Serial.available()) {
     while (Serial.read() != -1);
     Serial.println("Starting tests...");
-    
+
     tester("- XOR test", xor_test);
     tester("- XNOR test", xnor_test);
     tester("- AND test", and_test);
     tester("- OR test", or_test);
     tester("- Adder test", adder_test);
-    
+
     /*
-    tester("- XOR test", loopTester(_XOR));
-    tester("- XNOR test", loopTester(_XNOR));
-    tester("- AND test", loopTester(_AND));
-    tester("- OR test", loopTester(_OR));
-    tester("- Adder test", loopTester(_ADD));
-    tester("- Sub test", loopTester(_SUB));
+      tester("- XOR test", loopTester(_XOR));
+      tester("- XNOR test", loopTester(_XNOR));
+      tester("- AND test", loopTester(_AND));
+      tester("- OR test", loopTester(_OR));
+      tester("- Adder test", loopTester(_ADD));
+      tester("- Sub test", loopTester(_SUB));
     */
   }
 }
